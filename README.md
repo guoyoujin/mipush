@@ -21,7 +21,7 @@ Or install it yourself as:
     $ gem install xiaomipush
 
 ## Usage
-```
+```ruby
 Dir[File.dirname(__FILE__) + '/lib/*.rb'].each {|file| require file }
 @xiaomipush_service = Xiaomipush::Service.config do |s|
   s.sandbox = false # default false
