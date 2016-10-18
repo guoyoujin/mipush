@@ -1,13 +1,13 @@
-require './lib/xiaomipush/xm_resources'
-require './lib/xiaomipush/http_base'
-require './lib/xiaomipush/message'
-require './lib/xiaomipush/android_builder'
-require './lib/xiaomipush/ios_builder'
-require './lib/xiaomipush/targeted_message'
-require './lib/xiaomipush/stats'
-require './lib/xiaomipush/subscription'
-require './lib/xiaomipush/tracer'
-require './lib/xiaomipush/feedback'
+require 'xiaomipush/xm_resources'
+require 'xiaomipush/http_base'
+require 'xiaomipush/message'
+require 'xiaomipush/android_builder'
+require 'xiaomipush/ios_builder'
+require 'xiaomipush/targeted_message'
+require 'xiaomipush/stats'
+require 'xiaomipush/subscription'
+require 'xiaomipush/tracer'
+require 'xiaomipush/feedback'
 
 module Xiaomipush
   class Service

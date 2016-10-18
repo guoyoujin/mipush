@@ -1,3 +1,5 @@
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 Dir[File.dirname(__FILE__) + '/lib/*.rb'].each {|file| require file }
 @xiaomipush_service = Xiaomipush::Service.config do |s|
   s.sandbox = false # default false
