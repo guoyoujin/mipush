@@ -7,17 +7,6 @@ Dir[File.dirname(__FILE__) + '/lib/*.rb'].each {|file| require file }
   s.package_name = "io.mdrtwell.mipushdemo"
   s.connection_adapter = :net_http # default
 end
-
-
-@xiaomipush_service = Xiaomipush::Service.config do |s|
-  s.sandbox = true # default false
-  s.ios_secret = "ios secret key"
-  s.bundle_id = "com.xxx.ios"
-  s.android_secret = 'android secret key'
-  s.package_name = "com.xxx.android"
-  s.connection_adapter = :net_http # default
-end
-
 # just iOS
 @message1 = @xiaomipush_service.build(:ios, description: 'hello')
 @xiaomipush_service.push(:all, @message1)
